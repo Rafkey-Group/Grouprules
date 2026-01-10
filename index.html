@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="https://lucide.dev/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <meta name="theme-color" content="#020617" />
+    
+    <!-- PWA Settings -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="apple-mobile-web-app-title" content="AV/G/LS Rules">
+    <link rel="manifest" href="/manifest.json">
+    
+    <!-- Telegram / Open Graph Meta Tags -->
+    <meta property="og:title" content="Правила | Anime Vanguards/Guardians/Last Stand" />
+    <meta property="og:description" content="Официальный свод правил, иерархия и система наказаний. Читать обязательно." />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Anime Vanguards/Guardians/Last Stand" />
+    <!-- Placeholder for an image if you host it. Telegram shows this as the preview -->
+    <!-- <meta property="og:image" content="https://your-domain.com/preview-image.png" /> -->
+
+    <title>Правила | Anime Vanguards/Guardians/Last Stand</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ['Inter', 'sans-serif'],
+            },
+            colors: {
+              slate: {
+                850: '#151e2e',
+                950: '#020617',
+              }
+            }
+          }
+        }
+      }
+    </script>
+    <style>
+      body {
+        background-color: #020617;
+        color: #e2e8f0;
+      }
+      /* Custom Scrollbar */
+      ::-webkit-scrollbar {
+        width: 8px;
+      }
+      ::-webkit-scrollbar-track {
+        background: #0f172a; 
+      }
+      ::-webkit-scrollbar-thumb {
+        background: #334155; 
+        border-radius: 4px;
+      }
+      ::-webkit-scrollbar-thumb:hover {
+        background: #475569; 
+      }
+
+      /* Print Styles for Perfect PDF Generation */
+      @media print {
+        @page {
+          margin: 10mm;
+          size: A4;
+        }
+        
+        body {
+          -webkit-print-color-adjust: exact !important;
+          print-color-adjust: exact !important;
+          background-color: #020617 !important;
+          color: #e2e8f0 !important;
+        }
+
+        /* Classes to control page breaks */
+        .print-break-avoid {
+          break-inside: avoid !important;
+          page-break-inside: avoid !important;
+        }
+        
+        .print-break-always {
+          break-before: always !important;
+          page-break-before: always !important;
+        }
+
+        /* Hide interactive elements */
+        header button, 
+        .no-print {
+          display: none !important;
+        }
+
+        /* Adjust header for print */
+        header {
+          position: static !important;
+          border-bottom: 2px solid #334155 !important;
+          background-color: #020617 !important;
+          padding-top: 0 !important;
+          margin-bottom: 20px !important;
+        }
+        
+        /* Ensure layout works on A4 */
+        main {
+          padding-top: 0 !important;
+          max-width: 100% !important;
+        }
+        
+        /* Make gradients and backgrounds printable */
+        * {
+          text-shadow: none !important;
+          box-shadow: none !important;
+        }
+        
+        /* Better link display in print (optional, mostly hiding URLs here) */
+        a {
+          text-decoration: none !important;
+          color: inherit !important;
+        }
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react/": "https://esm.sh/react@^19.2.3/",
+    "react": "https://esm.sh/react@^19.2.3",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.3/",
+    "lucide-react": "https://esm.sh/lucide-react@^0.562.0"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+  <body>
+    <div id="root"></div>
+  <script type="module" src="/index.tsx"></script>
+</body>
+</html>
