@@ -127,7 +127,7 @@ const App = () => {
         <footer className="text-center py-12 border-t border-slate-800">
             <p className="text-slate-500 text-sm mb-2">Anime Vanguards/Guardians/Last Stand [RU]</p>
             <p className="text-red-500 font-bold uppercase tracking-widest text-xs">
-                Все решения @Rafkey окончательны
+                Все решения @Rafkey окончательны и гифки которые он признал разрешены всем без мута
             </p>
         </footer>
 
