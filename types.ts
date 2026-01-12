@@ -12,6 +12,7 @@ export interface Rule {
   note?: string;
   important?: string;
   exception?: string;
+  icon?: any;
 }
 
 export interface Section {

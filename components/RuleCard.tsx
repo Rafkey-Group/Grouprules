@@ -7,11 +7,21 @@ interface RuleCardProps {
 }
 
 const RuleCard: React.FC<RuleCardProps> = ({ rule }) => {
+  const Icon = rule.icon;
+
   return (
     <div className="bg-slate-900 border border-slate-800 rounded-xl p-5 mb-4 shadow-sm hover:border-slate-700 transition-colors print-break-avoid">
       <div className="flex items-start justify-between mb-3">
         <h3 className="text-lg font-bold text-white flex items-center gap-3">
-          <span className="bg-indigo-600/20 text-indigo-400 px-2 py-1 rounded text-sm font-mono">{rule.id}</span>
+          {Icon ? (
+            <div className="bg-indigo-600/20 p-2 rounded-lg text-indigo-400 shrink-0">
+              <Icon className="w-5 h-5" />
+            </div>
+          ) : (
+            <span className="bg-indigo-600/20 text-indigo-400 px-2 py-1 rounded text-sm font-mono shrink-0">
+              {rule.id}
+            </span>
+          )}
           {rule.title}
         </h3>
       </div>
