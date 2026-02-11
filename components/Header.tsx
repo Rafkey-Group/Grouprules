@@ -11,7 +11,7 @@ const Header = () => {
           </div>
           <div>
             <h1 className="font-bold text-white leading-tight text-xs sm:text-base">
-              Anime Vanguards/Guardians/Last Stand
+              Anime Vanguards/Guardians/Crusaders
             </h1>
             <p className="text-[10px] sm:text-xs text-indigo-400 font-medium tracking-wide">
               OFFICIAL RULES [RU]
