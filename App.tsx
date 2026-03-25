@@ -41,10 +41,9 @@ const App = () => {
           </button>
         </div>
 
-        {/* Intro Grid - Only show on Main tab */}
+        {/* Intro Grid */}
         {activeTab === 'main' && (
           <div className="grid md:grid-cols-2 gap-6 print-break-avoid animate-fade-in">
-            {/* Punishments */}
             <section className="bg-slate-900/50 rounded-2xl border border-slate-800 p-6">
               <h2 className="text-xl font-bold text-white mb-4 flex items-center gap-2">
                 <Gavel className="w-5 h-5 text-indigo-500" />
@@ -62,7 +61,6 @@ const App = () => {
               </ul>
             </section>
 
-            {/* Hierarchy */}
             <section className="bg-slate-900/50 rounded-2xl border border-slate-800 p-6">
               <h2 className="text-xl font-bold text-white mb-4 flex items-center gap-2">
                 <Star className="w-5 h-5 text-yellow-500" />
@@ -89,7 +87,7 @@ const App = () => {
           </div>
         )}
 
-        {/* Dynamic Rules Rendering */}
+        {/* Dynamic Rules */}
         <div className="space-y-12">
           {currentRules.map((section) => (
             <section key={section.id} id={`section-${section.id}`} className="scroll-mt-32 animate-fade-in">
@@ -110,10 +108,8 @@ const App = () => {
           ))}
         </div>
 
-        {/* Footer info - Only on Main tab */}
         {activeTab === 'main' && (
           <>
-            {/* Section 3: Mod Rules */}
             <section className="bg-slate-900 border border-slate-800 rounded-2xl p-6 md:p-8 print-break-avoid">
                 <div className="flex items-center gap-3 mb-6 pb-4 border-b border-slate-800">
                     <ShieldAlert className="w-8 h-8 text-sky-500" />
@@ -133,7 +129,6 @@ const App = () => {
                 </div>
             </section>
 
-            {/* Section 4: Complaints */}
             <section className="bg-indigo-950/20 border border-indigo-900/30 rounded-2xl p-6 md:p-8 print-break-avoid">
                 <div className="flex items-center gap-3 mb-6">
                     <FileWarning className="w-8 h-8 text-indigo-400" />
@@ -163,7 +158,7 @@ const App = () => {
 
         {/* Footer */}
         <footer className="text-center py-12 border-t border-slate-800">
-            <p className="text-slate-500 text-sm mb-2">Anime Vanguards/Guardians/Last Stand [RU]</p>
+            <p className="text-slate-500 text-sm mb-2">Rafkey Group [RU]</p>
             <p className="text-red-500 font-bold uppercase tracking-widest text-xs">
                 Все решения @Rafkey окончательны и гифки которые он признал можно кидать без мута
             </p>

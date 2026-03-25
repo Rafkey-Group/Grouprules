@@ -10,8 +10,8 @@ const Header = () => {
             <Shield className="w-6 h-6 text-white" />
           </div>
           <div>
-            <h1 className="font-bold text-white leading-tight text-xs sm:text-base">
-              Anime Vanguards/Guardians/Crusaders
+            <h1 className="font-bold text-white leading-tight text-xs sm:text-base uppercase tracking-tight">
+              Rafkey Group
             </h1>
             <p className="text-[10px] sm:text-xs text-indigo-400 font-medium tracking-wide">
               OFFICIAL RULES [RU]
