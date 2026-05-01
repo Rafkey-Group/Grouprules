@@ -241,8 +241,8 @@ export const topicRules: Section[] = [
         id: "Услуги",
         title: "Услуги",
         icon: Handshake,
-        forbidden: "Скам (обман).",
-        punishment: "Бан по 2.2 + ЧС",
+        forbidden: "Скам (обман), полное или практически идентичное копирования чужих текстов",
+        punishment: "По правилам 2.2, 1.1",
         extras: [
           { title: "Суть", content: "Помощь в гринде, прохождение за оплату." }
         ]
